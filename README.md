@@ -5,16 +5,16 @@ made using reactJS and Sanity
 <h3>Its live <a href="https://maheshpaul.netlify.app/" target="_blank">Here</a></h3>
 
 ## Screenshots
-Home page
+#Home page
 ![Home Page](./images/ss1.png)
-About page
+#About page
 ![About Page](./images/ss2.png)
-Works page
+#Works page
 ![Work Page](./images/ss3.png)
-Skills page
+#Skills page
 ![Skills Page](./images/ss4.png)
-Contact page
+#Contact page
 ![Contact Page](./images/ss5.png)
-It also has Dark mode!!
+#It also has Dark mode!!
 ![Dark Mode](./images/ss6.png)
 
