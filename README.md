@@ -1,4 +1,4 @@
-[![Forks][forks-shield]][forks-url]
+[![Forks][forks-shield]][[forks-url](https://github.com/CityIsBetter/Portfolio/pulse)]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
