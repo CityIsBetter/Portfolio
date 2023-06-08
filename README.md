@@ -6,15 +6,15 @@ made using reactJS and Sanity
 
 ## Screenshots
 Home page
-![Home Page](/images/ss1.png)
+![Home Page](./images/ss1.png)
 About page
-![About Page](./images/ss1.png)
+![About Page](./images/ss2.png)
 Works page
-![Work Page](./images/ss1.png)
+![Work Page](./images/ss3.png)
 Skills page
-![Skills Page](./images/ss1.png)
+![Skills Page](./images/ss4.png)
 Contact page
-![Contact Page](./images/ss1.png)
+![Contact Page](./images/ss5.png)
 It also has Dark mode!!
-![Dark Mode](./images/ss1.png)
+![Dark Mode](./images/ss6.png)
 
