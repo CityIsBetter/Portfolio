@@ -7,7 +7,7 @@ made using reactJS and Sanity
 ## Screenshots
 # Home page
 ![Home Page](./images/ss1.png)
-#About page
+# About page
 ![About Page](./images/ss2.png)
 # Works page
 ![Work Page](./images/ss3.png)
