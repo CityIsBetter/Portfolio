@@ -1,10 +1,14 @@
-[![Forks][forks-shield]][[forks-url](https://github.com/CityIsBetter/Portfolio/pulse)]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
-
-# My Website Portfolio
+## My Website Portfolio
 
 made using reactJS and Sanity
 
-#Its live in [https://maheshpaul.netlify.app/]
+<h2>Its live <a href="https://maheshpaul.netlify.app/" target="_blank">Here</a></h2>
+
+## Screenshots
+
+[![Home Page][images/ss1]](https://maheshpaul.netlify.app/)
+[![About Page][images/ss2]](https://maheshpaul.netlify.app/)
+[![Work Page][images/ss3]](https://maheshpaul.netlify.app/)
+[![Skills Page][images/ss4]](https://maheshpaul.netlify.app/)
+[![Contact Page][images/ss5]](https://maheshpaul.netlify.app/)
+
