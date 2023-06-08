@@ -6,15 +6,15 @@ made using reactJS and Sanity
 
 ## Screenshots
 Home page
-[![Home Page][images/ss1]](https://maheshpaul.netlify.app/)
+[![Home Page][images/ss1.png]](https://maheshpaul.netlify.app/)
 About page
-[![About Page][images/ss2]](https://maheshpaul.netlify.app/)
+[![About Page][images/ss2.png]](https://maheshpaul.netlify.app/)
 Works page
-[![Work Page][images/ss3]](https://maheshpaul.netlify.app/)
+[![Work Page][images/ss3.png]](https://maheshpaul.netlify.app/)
 Skills page
-[![Skills Page][images/ss4]](https://maheshpaul.netlify.app/)
+[![Skills Page][images/ss4.png]](https://maheshpaul.netlify.app/)
 Contact page
-[![Contact Page][images/ss5]](https://maheshpaul.netlify.app/)
+[![Contact Page][images/ss5.png]](https://maheshpaul.netlify.app/)
 It also has Dark mode!!
-[![Dark Mode][images/ss6]](https://maheshpaul.netlify.app/)
+[![Dark Mode][images/ss6.png]](https://maheshpaul.netlify.app/)
 
