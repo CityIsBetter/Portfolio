@@ -1,0 +1,34 @@
+.preloader{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000e0;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.preloader .texts-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 760px;
+    font-size: 40px;
+    font-weight: 800;
+    overflow: hidden;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .preloader .texts-container{
+        font-size: 20px;
+        width: 380px;
+    }
+}

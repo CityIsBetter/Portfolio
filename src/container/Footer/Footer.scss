@@ -38,10 +38,11 @@
         a{
             text-decoration: none;
             font-weight: 500;
+            color:#000;
         }
         &:hover{
             border: 1px solid rgba(0,0,0,0.1);
-            box-shadow: 0 0 25px #fef4f5;
+            box-shadow: 0 0 25px var(--tblack);
         }
         
         @media screen and (max-width: 450px) {
@@ -95,11 +96,15 @@
         border: none;
         background-color: var(--secondary-color);
         font-weight: 500;
-        color: var(--white-color);
+        color: #fff;
         outline: none;
         margin: 2rem 0 0 0;
         font-family: var(--font-base);
         cursor: pointer;
+
+        &:hover{
+            box-shadow: 0 0 25px var(--tblack);
+        }
     }
     @media screen and (max-width: 768px) {
         width: 100%;

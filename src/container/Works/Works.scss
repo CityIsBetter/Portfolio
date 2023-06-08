@@ -51,7 +51,7 @@
         margin: 2rem;
         padding: 1rem;
         border-radius: 0.5rem;
-        background-color: white;
+        background-color: var(--white-color);
         color: black;
 
         cursor: pointer;
@@ -117,7 +117,7 @@
         svg{
             width: 50%;
             height: 50%;
-            color: var(--white-color);
+            color: #fff;
         }
     }
 }
@@ -135,7 +135,7 @@
         position: absolute;
         padding: 0.5rem 1rem;
         border-radius: 10px;
-        background-color: white;
+        background-color: var(--primary-color);
         top: -25px;
         border: 1px solid rgba(0,0,0,0.2);
     }

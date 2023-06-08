@@ -1,4 +1,5 @@
 import React from 'react';
+import {FaHackerrank} from 'react-icons/fa'
 import { BsTwitter, BsInstagram } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
@@ -8,8 +9,10 @@ const SocialMedia = () => {
   return (
     <div className='app__social'>
         <div>
-            
-            <a href='https://www.instagram.com/mahesh_paul_j/' target='_blank' ><BsInstagram /></a>
+        <a href='https://www.hackerrank.com/mahesh_paul_j' target='_blank'><FaHackerrank /></a>
+        </div>
+        <div>
+        <a href='https://www.instagram.com/mahesh_paul_j/' target='_blank' ><BsInstagram /></a>
         </div>
         <div>
         <a href='https://twitter.com/CityIsBetter_' target='_blank' ><BsTwitter /></a>
