@@ -6,7 +6,7 @@ made using reactJS and Sanity
 
 ## Screenshots
 Home page
-[![Home Page][]](/images/ss1.png)
+[![Home Page]](./images/ss1.png)
 About page
 [![About Page][/images/ss2.png]](https://maheshpaul.netlify.app/)
 Works page
