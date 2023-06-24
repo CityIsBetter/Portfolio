@@ -58,7 +58,7 @@
         transition: all 0.3s ease;
 
         &:hover{
-            box-shadow: 0 0 25px rgba(0,0,0,0.2);
+            box-shadow: 0 0 25px var(--tblack);
         }
         @media screen and (min-width:2000px) {
             width: 470px;
