@@ -6,6 +6,27 @@ import './App.scss';
 import PreLoader from './components/PreLoader';
 
 const App = () => {
+
+  let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-val");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    if (pos>100){
+      scrollProgress.style.display = "grid";
+    }
+    else{
+      scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () => {
+      document.documentElement.scrollTop = 0;
+    });
+    scrollProgress.style.background = `conic-gradient(#313bac ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+  }
+
+  window.onscroll = calcScrollValue;
+  window.onload = calcScrollValue;
   
   return (
     <>
@@ -25,12 +46,16 @@ const App = () => {
         'select',
         'textarea',
         'button',
-        '.link'
+        '.link',
+        'img'
       ]}
 
     />
     <PreLoader />
     <div className='app'>
+      <div id='progress'>
+        <span id='progress-val'>↑</span>
+      </div>
       <Navbar />
       <Header />
       <About /> 
