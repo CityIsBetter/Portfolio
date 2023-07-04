@@ -9,7 +9,6 @@ const App = () => {
 
   let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
-    let progressValue = document.getElementById("progress-val");
     let pos = document.documentElement.scrollTop;
     let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrollValue = Math.round((pos * 100) / calcHeight);
@@ -33,7 +32,11 @@ const App = () => {
     <AnimatedCursor 
       outerSize={10}
       innerSize={10}
-      color='80, 90, 202'
+      color='255, 255, 255'
+      outerStyle={{
+        mixBlendMode: 'difference',
+        background: '#edf2f8'
+      }}
       clickables={[
         'a',
         'input[type="text"]',

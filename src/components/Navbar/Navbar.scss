@@ -131,13 +131,13 @@
         transition: all 0.3s ease-in-out;
   
         &:hover {
-          color: var(--secondary-color);
+          color: #afa535;
         }
       }
   
       &:hover {
         div {
-          background: var(--secondary-color);
+          background: #cec453;
         }
       }
     }
@@ -203,7 +203,7 @@
             transition: all 0.3s ease-in-out;
   
             &:hover {
-              color: var(--secondary-color);
+              color: #cec453;
             }
           }
         }

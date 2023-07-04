@@ -66,13 +66,8 @@
         }
     }
     .tag-cmp{
-        flex-direction: column;
+        display: inline-flex;
         margin-top: 3rem;
-        p{
-            width: 100%;
-            text-transform: uppercase;
-            text-align: right;
-        }
     }
     span{
         font-size: 3.5rem;
@@ -102,27 +97,107 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        background: var(--white-color);
         box-shadow: 0 0 20px var(--tblack);
         img{
             width: 60%;
             height: 60%;
-
         }
     }
     div:nth-child(1){
         width: 100px;
         height: 100px;
+        span:nth-child(1){
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+            transition: 0.5s;
+            animation: animate 6s linear infinite;
+        }
+        span:nth-child(2){
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: 0.5s;
+            animation: animate 4s linear infinite;
+        }
+        span:nth-child(3){
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+            transition: 0.5s;
+            animation: animate2 10s linear infinite;
+        }
     }
     div:nth-child(2){
         width: 150px;
         height: 150px;
         margin: 1.75rem;
+        span:nth-child(1){
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+            transition: 0.5s;
+            animation: animate 6s linear infinite;
+        }
+        span:nth-child(2){
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: 0.5s;
+            animation: animate 4s linear infinite;
+        }
+        span:nth-child(3){
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+            transition: 0.5s;
+            animation: animate2 10s linear infinite;
+        
+        }
     }
     div:nth-child(3){
         width: 70px;
         height: 70px;
+        span:nth-child(1){
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+            transition: 0.5s;
+            animation: animate 6s linear infinite;
+        }
+        span:nth-child(2){
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: 0.5s;
+            animation: animate 4s linear infinite;
+        }
+        span:nth-child(3){
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+            transition: 0.5s;
+            animation: animate2 10s linear infinite;
+        
+        }
     }
 
     @media screen and (min-width: 2000px) {
@@ -178,5 +253,73 @@
     }
     @media screen and (max-width: 1200px) {
         margin: 2rem 0;
+    }
+}
+
+.dynamic-text{
+    margin-left: 15px;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+}
+
+.dynamic-text li{
+    list-style: none;
+    position: relative;
+
+    span{
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--secondary-color);
+        position: relative;
+        top: 0;
+        animation: slide 4.5s steps(3) infinite;
+    @keyframes slide{
+        100%{
+            top: -135px;
+        }
+    }
+    @media screen and (max-width: 1200px){
+        font-size: 24px;
+        @keyframes slide{
+            100%{
+                top: -120px;
+            }
+        }
+    }
+    }
+    span::after{
+        transition: background-color 0.5s ease-in-out;
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--primary-color);
+        border-left: 2px solid var(--secondary-color);
+        animation: typing 1.5s steps(17) infinite;
+
+        @keyframes typing{
+            100%{
+                left: 100%;
+                margin: 0 -35px 0 35px;
+            }
+        }
+    }
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }

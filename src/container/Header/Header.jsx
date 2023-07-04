@@ -33,8 +33,12 @@ const Header = () => {
           </div>
 
           <div className='tag-cmp app__flex'>
-            <p className='p-text'>Web Developer</p>
-            <p className='p-text'>tech enthusiast</p>
+            <p className='p-text'>I'm a </p>
+            <ul className='dynamic-text'>
+              <li><span>Student</span></li>
+              <li><span>Developer</span></li>
+              <li><span>Tech Enthusiastic</span></li>
+            </ul>
           </div>
         </div>
       </motion.div>
@@ -61,6 +65,9 @@ const Header = () => {
       >
         {[images.javascript, images.html, images.react].map((circle, index)=>(
           <motion.div whileHover={{scale: 1.1}} className='circle-cmp app_flex' key={`circle-${index}`}>
+            <span></span>
+            <span></span>
+            <span></span>
             <img src={circle} alt='circle' />
           </motion.div>
         ))}
