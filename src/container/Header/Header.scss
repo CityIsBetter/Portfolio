@@ -250,6 +250,18 @@
         z-index: 0;
         width: 100%;
         height: 90%;
+        animation: scaling 4s infinite linear;
+        @keyframes scaling{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.1);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
     }
     @media screen and (max-width: 1200px) {
         margin: 2rem 0;
@@ -273,7 +285,7 @@
         color: var(--secondary-color);
         position: relative;
         top: 0;
-        animation: slide 4.5s steps(3) infinite;
+        animation: slide 9s steps(3) infinite;
     @keyframes slide{
         100%{
             top: -135px;
@@ -297,11 +309,15 @@
         width: 100%;
         background-color: var(--primary-color);
         border-left: 2px solid var(--secondary-color);
-        animation: typing 1.5s steps(17) infinite;
+        animation: typing 3s steps(17) infinite;
 
         @keyframes typing{
-            100%{
+            50%{
                 left: 100%;
+                margin: 0 -35px 0 35px;
+            }
+            100%{
+                left: 0%;
                 margin: 0 -35px 0 35px;
             }
         }
