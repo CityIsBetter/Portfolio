@@ -4,6 +4,10 @@ This is my Website Portfolio made using reactJS and Sanity and hosted in Netlify
 
 <h3>Its live <a href="https://maheshpaul.netlify.app/" target="_blank">Here</a></h3>
 
+# Benchmark
+
+![benchmark](./images/benchmark.png)
+
 ## Screenshots
 # Home page
 ![Home Page](./images/ss1.png)
