@@ -23,7 +23,7 @@ const Works = () => {
       setFilterWork(data);
     })
   }, [])
-  
+
 
   const handleWorkFilter = (item) => {
 
@@ -48,7 +48,7 @@ const Works = () => {
         <span> Works</span>
     </h2>
     <div className='app__work-filter'>
-      {["Web App", '3D Models', 'Others', 'All'].map((item, index) => (
+      {["Web App", 'Others', 'All'].map((item, index) => (
         <div
         key={index}
         onClick={() => handleWorkFilter(item)}
@@ -85,11 +85,13 @@ const Works = () => {
               <p className='p-text'>{work.tags[0]}</p>
             </div>
           </div>
-
         </div>
+        
       ))}
     </motion.div>
-      
+    <div>
+      To see my 3D works <a href='https://cityisbetter.github.io/assests/html/3dmodeling.html' target='_blank' rel="noreferrer"><button>Click here</button></a> 
+    </div>
     </>
   )
 }

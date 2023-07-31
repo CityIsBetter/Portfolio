@@ -7,7 +7,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 const SocialMedia = () => {
   return (
-    <div className='app__social'>
+    <div className='app__social' id='socialIcons'>
         <div>
         <a href='https://www.hackerrank.com/mahesh_paul_j' target='_blank' rel="noreferrer"><FaHackerrank /></a>
         </div>

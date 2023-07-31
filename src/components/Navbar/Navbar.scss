@@ -17,7 +17,7 @@
   position: absolute;
   height: 4px;
   width: 100%;
-  background: var(--gray-color);
+  background: var(--black-color);
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -76,13 +76,14 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     position: fixed;
-    z-index: 2;
+    z-index: 100;
   }
   
   .app__navbar-logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    cursor: pointer;
   
     img {
       width: auto;
@@ -120,7 +121,7 @@
       }
   
       a {
-        color: var(--gray-color);
+        color: var(--black-color);
         text-decoration: underline;
         flex-direction: column;
         font-size:auto;
@@ -158,11 +159,12 @@
       top: 60px;
       bottom: 0;
       right: 0;
-      z-index: 5;
+      z-index: 150;
   
       padding: 1rem;
   
-      width: 80%;
+      width: 300px;
+      min-height: 350px;
       height: 42vh;
       
       display: flex;
@@ -224,6 +226,6 @@
     border-radius: 20px;
   }
 
-  .app__navbar-links li:last-child{
+  .app__navbar-links ul li:last-child{
     align-items: end;
   }

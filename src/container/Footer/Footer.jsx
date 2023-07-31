@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client'; 
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import './Footer.scss';
 
@@ -12,6 +13,12 @@ const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: ''});
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  const [verified, setVerified] = useState(false);
+  function onChange(value){
+    console.log("Captcha value:", value);
+    setVerified(true);
+  }
 
   const { name, email, message } = formData;
   const handleChangeInput = (e) => {
@@ -36,7 +43,7 @@ const Footer = () => {
   }
   return (
     <>
-      <h2 className='head-text'>Take a coffee & chat with me</h2>
+      <h2 className='head-text'>Take a coffee☕ & chat with me</h2>
 
       <div className='app__footer-cards'>
         <div className='app__footer-card'>
@@ -60,7 +67,8 @@ const Footer = () => {
         <div>
           <textarea className='p-text' placeholder='Your Message' value={message} name='message' onChange={handleChangeInput}></textarea>
         </div>
-        <button type='button' className='p-text' onClick={handleSubmit}>{loading ? 'Sending' : 'Send Message'}</button>
+        <ReCAPTCHA sitekey='6LcCTV0nAAAAAORvPmpJfBnGUAXBacvmcfDXDFdk' onChange={onChange}/>
+        <button type='button' className='p-text' onClick={handleSubmit} disabled={!verified}>{loading ? 'Sending' : 'Send Message'}</button>
       </div> )
       :
       (<div>

@@ -34,7 +34,7 @@ const DarkMode = () => {
     }
   return (
         <label class="switch">
-            <input id='toggle' type="checkbox" onChange={toggleTheme} defaultChecked={selectedTheme === 'dark'}/>
+            <input id='toggle' type="checkbox" onChange={toggleTheme} defaultChecked={selectedTheme === 'dark'} label='theme toggle'/>
             <span class="slider"></span>
         </label>
   )

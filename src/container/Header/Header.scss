@@ -98,7 +98,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 20px var(--tblack);
+        box-shadow: 0 0 20px var(--secondary-color);
         img{
             width: 60%;
             height: 60%;
@@ -269,61 +269,6 @@
     }
 }
 
-.dynamic-text{
-    margin-left: 10px;
-    height: 38px;
-    line-height: 38px;
-    overflow: hidden;
-}
-
-.dynamic-text li{
-    list-style: none;
-    position: relative;
-
-    span{
-        font-size: 30px;
-        font-weight: 700;
-        color: var(--secondary-color);
-        position: relative;
-        top: 0;
-        animation: slide 13.5s steps(3) infinite;
-    @keyframes slide{
-        100%{
-            top: -135px;
-        }
-    }
-    @media screen and (max-width: 1200px){
-        font-size: 24px;
-        @keyframes slide{
-            100%{
-                top: -120px;
-            }
-        }
-    }
-    }
-    span::after{
-        transition: background-color 0.5s ease-in-out;
-        content: '';
-        position: absolute;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: var(--primary-color);
-        border-left: 2px solid var(--secondary-color);
-        animation: typing 4.5s steps(20) infinite;
-
-        @keyframes typing{
-            50%{
-                left: 100%;
-                margin: 0 -35px 0 35px;
-            }
-            100%{
-                left: 0%;
-                margin: 0 -35px 0 35px;
-            }
-        }
-    }
-}
 @keyframes animate {
     0% {
         transform: rotate(0deg);
@@ -338,5 +283,26 @@
     }
     100% {
         transform: rotate(0deg);
+    }
+}
+
+.sliding-text{
+    position: absolute;
+    width: 1000vw;
+    font-size: 96px;
+    font-weight: 900;
+    animation: sliding 10s linear infinite;
+    z-index: 2;
+    color: rgba(255,255,255,1);
+    text-shadow: 0 0 3px var(--secondary-color);
+    mix-blend-mode: difference;
+}
+
+@keyframes sliding{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -1950px;
     }
 }

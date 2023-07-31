@@ -20,6 +20,8 @@ const Header = () => {
   document.title = "Mahesh Paul | Portfolio";
 
   return (
+    <>
+    <div className='sliding-text'>Tech Enthusiast • Student • Developer • Tech Enthusiast • Student • Developer</div>
     <div className='app__header app__flex'>
       <motion.div
       whileInView={{x:[-100,0], opacity:[0,1]}}
@@ -34,16 +36,7 @@ const Header = () => {
               <h1 className='head-text'>Mahesh Paul</h1>
             </div>
           </div>
-
-          <div className='tag-cmp app__flex'>
-            <p className='p-text'>I'm a </p>
-            <ul className='dynamic-text'>
-              <li><span>Student.</span></li>
-              <li><span>Developer.</span></li>
-              <li><span>Tech Enthusiastic</span></li>
-            </ul>
-          </div>
-        </div>
+        </div> 
       </motion.div>
 
       <motion.div
@@ -76,6 +69,7 @@ const Header = () => {
         ))}
       </motion.div>
     </div>
+    </>
   )
 }
 

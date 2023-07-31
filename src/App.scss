@@ -105,13 +105,12 @@
     flex-direction: column;
   
     padding: 1rem;
-  
     div {
       width: 40px;
       height: 40px;
       border-radius: 50%;
       background-color: var(--white-color);
-      margin: 0.25rem 0;
+      margin: 0.25rem;
       border: 1px solid var(--lightGray-color);
   
       display: flex;
@@ -129,6 +128,7 @@
       &:hover {
         background-color: var(--secondary-color);
         border-color: var(--secondary-color);
+        transform: scale(1.1);
   
         svg {
           color: var(--white-color);
@@ -139,7 +139,7 @@
         width: 70px;
         height: 70px;
   
-        margin: 0.5rem 0;
+        margin: 0.5rem;
   
         svg {
           width: 30px;
@@ -149,38 +149,17 @@
     }
   }
   
-  .app__navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  
-    padding: 1rem;
-  
-    .app__navigation-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #cbcbcb;
-      margin: 0.5rem;
-  
-      transition: background-color 0.2s ease-in-out;
-  
-      &:hover {
-        background-color: var(--secondary-color);
-      }
-  
-      @media screen and (min-width: 2000px) {
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
   
   @media screen and (max-width: 500px) {
-    .app__navigation,
-    .app__social {
-      display: none;
+    .app__social{
+      position: fixed;
+      flex-direction: row;
+      bottom: 0;
+      width: 100vw;
+      justify-content: center;
+      z-index: 5;
+      background-color: var(--tblack);
+      backdrop-filter: blur(5px);
     }
   
     .copyright {
