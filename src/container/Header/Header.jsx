@@ -21,7 +21,6 @@ const Header = () => {
 
   return (
     <>
-    <div className='sliding-text'>Tech Enthusiast • Student • Developer • Tech Enthusiast • Student • Developer</div>
     <div className='app__header app__flex'>
       <motion.div
       whileInView={{x:[-100,0], opacity:[0,1]}}

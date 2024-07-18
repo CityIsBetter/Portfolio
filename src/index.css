@@ -19,7 +19,7 @@
 
 [data-theme = 'dark']{
   --primary-color: #212121  ;
-  --secondary-color: #3168ac;
+  --secondary-color: #313bac;
   --black-color: #ffffff;
   --lightGray-color: #202020;
   --gray-color: #cccccc;
@@ -51,3 +51,4 @@
 *::-webkit-scrollbar-track{
   background-color: var(--primary-color);
 } 
+

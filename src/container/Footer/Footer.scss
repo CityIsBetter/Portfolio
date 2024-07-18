@@ -68,7 +68,7 @@
         margin: 0.75rem 0;
         border-radius: 10px;
         cursor: pointer;
-        background-color: var(--primary-color);
+        background-color: var(--nav);
         
         transition: all 0.3 ease-in-out;
 
@@ -77,10 +77,10 @@
             padding: 0.95rem;
             border: none;
             border-radius: 7px;
-            background-color: var(--primary-color);
+            background-color: var(--nav);
 
             font-family: var(--font-base);
-            color: var(--secondary-color);
+            color: var(--black-color);
             outline: none;
         }
         textarea{
